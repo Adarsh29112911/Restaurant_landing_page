@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodieZone - Home</title>
+    <title>Reservations</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -23,16 +23,27 @@
         </div>
     </nav>
 
-    <main class="pages-container">
-        <section id="hero-section" class="page-section hero-section">
-            <div class="hero-content">
-                <h1>Welcome to FoodieZone Family</h1>
-                <p>A place where taste meets tradition.</p>
-                <a href="menu.html" class="btn">Explore Our Menu</a>
+    <section id="reservations" class="page-section section">
+        <div class="container">
+            <h2>Book a Table</h2>
+            <p>Reserve your spot with us for a memorable dining experience.</p>
+            
+            <div class="booking-status">
+                <p>Current Status: <span class="status-available">Tables Available!</span></p>
+                <p>Last updated: <span class="status-time">10:30 AM</span></p>
             </div>
-        </section>
-    </main>
 
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="number" placeholder="Number of Guests" required>
+                <input type="date" required>
+                <input type="time" required>
+                <button class="btn" type="submit">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+    
     <footer>
         <div class="container">
             <p>&copy; 2025 FoodieZone. All rights reserved.</p>

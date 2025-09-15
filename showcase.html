@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodieZone - Home</title>
+    <title>Customer Showcase</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -23,16 +23,23 @@
         </div>
     </nav>
 
-    <main class="pages-container">
-        <section id="hero-section" class="page-section hero-section">
-            <div class="hero-content">
-                <h1>Welcome to FoodieZone Family</h1>
-                <p>A place where taste meets tradition.</p>
-                <a href="menu.html" class="btn">Explore Our Menu</a>
-            </div>
-        </section>
-    </main>
-
+    <section id="showcase" class="page-section section">
+        <div class="container">
+            <h2>Customer Showcase</h2>
+            <p>Share your FoodieZone experience! Upload a picture and tell us what you loved.</p>
+            <form class="contact-form" id="showcase-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Share your experience..." required></textarea>
+                <label for="photo-upload" class="photo-upload-label">
+                    <i class="fas fa-camera"></i> Upload Your Photo
+                </label>
+                <input type="file" id="photo-upload" name="photo" accept="image/*" style="display: none;">
+                <button class="btn" type="submit">Submit Your Review</button>
+            </form>
+        </div>
+    </section>
+    
     <footer>
         <div class="container">
             <p>&copy; 2025 FoodieZone. All rights reserved.</p>

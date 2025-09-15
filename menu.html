@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="reservations.html" class="nav-link">Reservations</a>
+            <a href="offers.html" class="nav-link">Offers</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="showcase.html" class="nav-link">Showcase</a>
+        </div>
+    </nav>
+
+    <section id="menu" class="page-section section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-price="250">
+                    <img src="images/pizza.jpg" alt="Pizza">
+                    <h3>Classic Pizza</h3>
+                    <p>Loaded with cheese, fresh veggies and love.</p>
+                    <div class="price">₹250</div>
+                    <div class="quantity-control">
+                        <label for="pizza-qty">Quantity:</label>
+                        <input type="number" id="pizza-qty" value="1" min="1">
+                    </div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="menu-item" data-price="180">
+                    <img src="images/burger.jpg" alt="Burger">
+                    <h3>Beef Burger</h3>
+                    <p>Juicy beef patty with signature sauces.</p>
+                    <div class="price">₹180</div>
+                    <div class="quantity-control">
+                        <label for="burger-qty">Quantity:</label>
+                        <input type="number" id="burger-qty" value="1" min="1">
+                    </div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="menu-item" data-price="200">
+                    <img src="images/pasta.jpg" alt="Pasta">
+                    <h3>Italian Pasta</h3>
+                    <p>Creamy and rich pasta served hot.</p>
+                    <div class="price">₹200</div>
+                    <div class="quantity-control">
+                        <label for="pasta-qty">Quantity:</label>
+                        <input type="number" id="pasta-qty" value="1" min="1">
+                    </div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div id="cart-container" class="cart-container">
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                    </div>
+                <div class="cart-total">
+                    <strong>Total:</strong> <span id="total-price">₹0</span>
+                </div>
+                <button class="btn checkout-btn">Checkout</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FoodieZone. All rights reserved.</p>
+            <div class="social-links">
+                <a href="contact.html">Contact</a>
+                <a href="showcase.html">Showcase</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
