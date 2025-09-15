@@ -1,8 +1,15 @@
 /* === Global stuff === */
 :root {
+<<<<<<< HEAD
     --main-red: #e74c3c;
     --dark-red: #b13b2a;
     --txt-main: #333;
+=======
+    /* Main theme colors - picked manually */
+    --main-red: #e74c3c;      
+    --dark-red: #b13b2a;      /* slightly darker than main red */
+    --txt-main: #333; 
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
     --bg-light: #f4f4f4;
     --bg-dark: #2c3e50;
     --txt-light: #ecf0f1;
@@ -14,7 +21,10 @@ body {
     background: var(--bg-light);
     color: var(--txt-main);
     line-height: 1.6;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 }
 
 html { scroll-behavior: smooth; }
@@ -32,8 +42,11 @@ h1, h2 {
     color: #555;
     margin-bottom: 25px;
 }
+<<<<<<< HEAD
 
 h2 { font-size: 2.5rem; }
+=======
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 
 .btn {
     display: inline-block;
@@ -45,7 +58,11 @@ h2 { font-size: 2.5rem; }
     font-weight: bold;
     border: none;
     cursor: pointer;
+<<<<<<< HEAD
     transition: 0.3s ease;
+=======
+    transition: 0.3s ease; /* simple */
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 }
 
 .btn:hover {
@@ -78,6 +95,7 @@ h2 { font-size: 2.5rem; }
 
 .nav-link:hover { color: var(--main-red); }
 
+<<<<<<< HEAD
 /* Full-page sections */
 .page-section {
     min-height: 100vh;
@@ -94,9 +112,18 @@ h2 { font-size: 2.5rem; }
     background: url('images/interior.jpg') no-repeat center / cover;
     color: white;
     text-align: center;
+=======
+/* Hero section - big intro banner */
+.hero-section {
+    background: url('images/interior.jpg') no-repeat center / cover;
+    height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    color: white; text-align: center;
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
     position: relative;
 }
 
+/* little overlay */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -110,18 +137,27 @@ h2 { font-size: 2.5rem; }
 
 .hero-content h1 {
     font-size: 4.5rem;
-    color: #fff;
+    color: #fff; /* force pure white */
     margin-bottom: 10px;
+<<<<<<< HEAD
     text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+=======
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8); /* thoda zyada dark shadow */
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 }
 
 .hero-content p {
     font-size: 1.8rem;
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: #fff; /* force pure white */
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
     margin-bottom: 30px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
+<<<<<<< HEAD
 /* Sections */
 .section p {
     text-align: center;
@@ -129,6 +165,12 @@ h2 { font-size: 2.5rem; }
     margin: auto;
 }
 
+=======
+
+/* Sections */
+.section { padding: 80px 0; }
+
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 /* Cards & grids */
 .menu-grid, .offer-grid {
     display: grid;
@@ -163,11 +205,19 @@ h2 { font-size: 2.5rem; }
 }
 
 .rating-review span {
+<<<<<<< HEAD
     color: gold;
     font-size: 1.2rem;
 }
 
 /* Contact form & Showcase Form */
+=======
+    color: var(--main-red);
+    font-size: 1.2rem;
+}
+
+/* Contact form */
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -191,6 +241,7 @@ h2 { font-size: 2.5rem; }
 
 .contact-form textarea { resize: vertical; }
 
+<<<<<<< HEAD
 .photo-upload-label {
     display: block;
     background: #fff;
@@ -212,6 +263,8 @@ h2 { font-size: 2.5rem; }
     margin-bottom: 10px;
 }
 
+=======
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 /* Gallery */
 .gallery-grid {
     display: grid;
@@ -220,8 +273,7 @@ h2 { font-size: 2.5rem; }
 }
 
 .gallery-grid img {
-    width: 100%;
-    height: 200px;
+    width: 100%; height: 200px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -252,6 +304,7 @@ footer .container {
 }
 
 .social-links a:hover { color: var(--main-red); }
+<<<<<<< HEAD
 
 /* New Features CSS */
 .booking-status {
@@ -356,6 +409,9 @@ footer .container {
     margin-top: 20px;
 }
 
+=======
+
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .navbar .container { flex-direction: column; padding: 10px 0; }
@@ -364,5 +420,9 @@ footer .container {
     .hero-content p { font-size: 1.4rem; }
     .menu-grid, .offer-grid, .gallery-grid { grid-template-columns: 1fr; }
     footer .container { flex-direction: column; gap: 15px; }
+<<<<<<< HEAD
     .page-section { min-height: auto; }
 }
+=======
+}
+>>>>>>> 186d06fbec853e0bcd42cf2fa19ac284faa995dc
